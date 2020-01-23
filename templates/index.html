@@ -1,0 +1,80 @@
+<html>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mobi.css/3.1.1/mobi.min.css">
+<script>
+var path="";
+	
+function handleClick() {
+alert("Are you sure?");
+
+ }
+
+
+/*function readURL(event) {
+$.post("http://localhost:5000/video",
+  {
+    url: path,
+  },
+  function(data, status){
+    document.getElementById('result').innerHTML=data;
+  });
+    document.getElementById('demo').innerHTML="ok"; 
+}*/
+</script>
+<style>
+.btn{
+background-color: #4CAF50;
+color: white;
+border: 3px solid #4CAF50;
+border-radius: 8px;
+}
+.btn:hover {
+  background-color: white; /* Green */
+  color: #4CAF50;
+  border: 3px solid #4CAF50;
+}
+input:hover{
+font-style: italic;
+
+}
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal-content {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  background-color: #fefefe;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+</style>
+   <body>  
+        
+      <div class=modal>
+	  <form action = "survey" class=modal-content method = "POST" enctype="multipart/form-data">  
+         <h3>Video Survelliance System for Human Protective Equipment Detection</h3> 
+         <p>Choose an categories to include in survelliance : </p>
+		 <input type = "checkbox" id="hathelmet"  name = "hathelmet"/>Hat Helmet</br>
+		 <input type = "checkbox" id="eyemask"  name = "eyemask"/>Eye Mask</br>
+		 <input type = "checkbox" id="mask"  name = "mask"/>Mask</br>
+		 <input type = "checkbox" id="respiratory"  name = "respiratory"/>Respiratory</br>
+		 <input type = "checkbox" id="vest"  name = "vest"/>Body Vest</br>
+		 <input type = "checkbox" id="gloves"  name = "gloves"/>Gloves</br>
+		 <input type = "checkbox" id="boots"  name = "boots"/>Boots</br>
+		 <input type = "checkbox" id="completecoat"  name = "completecoat"/>Complete Coat</br>
+         <p></p>  
+		 <input onClick=handleClick() id=ok type=submit value=OK class=btn />
+      </form>  
+</div>
+</body>  
+</html>  
