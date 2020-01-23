@@ -4,7 +4,7 @@ gunicorn==20.0.4
 numpy==1.16.5
 pandas==0.25.1
 tensorboard==1.14.0
-tensorflow==1.15.0
+tensorflow==1.14.0
 tensorflow-estimator==1.15.1
 tensorflow-hub==0.7.0
 Werkzeug==0.16.0
