@@ -11,7 +11,7 @@ app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy   dog'
 app.config['CORS_HEADERS'] = 'Content-Type'
 UPLOAD_FOLDER = 'uploads/'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-handle = webbrowser.get()
+#handle = webbrowser.get()
 cors = CORS(app, resources={r"/foo": {"origins": "http://localhost:port"}})
 
 @app.route('/')  
